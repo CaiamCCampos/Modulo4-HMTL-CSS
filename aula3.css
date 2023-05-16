@@ -22,5 +22,6 @@ iframe{
 }
     :active ~iframe{
         display: block;
+        transition: 1s;
 
     }
