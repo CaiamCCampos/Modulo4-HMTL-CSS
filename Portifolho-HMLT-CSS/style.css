@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @keyframes fadein {  
     from {opacity: 0} 
     to {opacity: 1} 
@@ -9,11 +10,10 @@ body{
     padding: 0px;
     width: 100%;
     height: 100vh;
-
 }
 
 #conteudo{
-    background-image: url();
+    
     width: 100%;
     height: 100%;
     display: flex;
@@ -21,26 +21,32 @@ body{
     justify-content: center;
     align-content: center;
     flex-wrap: wrap;
-    background-color: brown;
+    background: brown url(imagens/fundo-madeira.jpg) no-repeat top center;
+    background-size: cover; 
+    background-attachment: fixed;
 }
 #auxiframe{
-    width: 300px;
-    height: 400px;
-    background-color: chartreuse;
+    width: 311px;
+    height: 627px;
+    background:  url(imagens/frame-iphone.png) no-repeat top center;
     display: flex;
     justify-content: center;
     align-items: center;
-}
+    background-size: contain;
+    
     
 
-
+}
 iframe{
-    background-image: url();
-    height: 300px;
-    width: 150px;
-    background-color: aqua;
+    
+    height: 471px;
+    width: 267px;
+   background-color: white;
     position: absolute;
     transform: translateY(20px);
+    position: relative;
+    top: -18px;
+   
     
 
 }
@@ -48,100 +54,87 @@ iframe{
     position: absolute;
     right: 0%;
     width: 100px;
-    height: 100%;
+    height: 98%;
     display: flex;
     flex-direction: column;
-    background-color: blue;
     flex-wrap: wrap;
-    justify-content: space-evenly;
-    align-content: center;
+    justify-content: flex-start;
+    align-content: flex-end;
     align-items: center;
    overflow-x: hidden;
+   padding-top: 10px;
+   padding-right: 10px;
 
 }
 a{
+    position: relative;
     border-radius: 50%;
     width: 50px;
     height: 50px;
-    background-color: yellowgreen;
+    top: 0px;
+    margin-bottom: 20px;
     
 
 }
-
-#HOME:hover{
-    box-shadow: 4px 3px black;
-    width: 55px;
-    height: 55px;
-    transition: 0.1s;
-
-}
-#FACE:hover{
-    box-shadow: 4px 3px black;
-    width: 55px;
-    height: 55px;
-    transition: 0.1s;
+img{
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    box-sizing: border-box;
+    
+    
 
 }
- #INSTA:hover{
-    box-shadow: 4px 3px black;
-    width: 55px;
-    height: 55px;
-    transition: 0.1s;
+img:hover{
+    box-shadow: 2px 2px 5px rgba(255, 255, 255, 0.603);
+    transform: translateX(-2px);
+    transition: transform 0.3s;
 
 }
-#LINKEDIN:hover{
-    box-shadow: 4px 3px black;
-    width: 55px;
-    height: 55px;
-    transition: 0.1s;
 
-}
-#GITHUB:hover{
-    box-shadow: 4px 3px black;
-    width: 55px;
-    height: 55px;
-    transition: 0.1s;
 
-}
-label:hover{
-    box-shadow: 4px 3px black;
-    width: 55px;
-    height: 55px;
-    transition: 0.1s;
-
-}
 
 #check[type="checkbox"]:checked ~a{
     transform: translateX(-0px);
     animation: fadein 4s linear;
-    transition: 2s;
+    transition: transform 2s;
     
 }
 label{
-    border-radius: 50%;
+    
     width: 50px;
     height: 50px;
-    background-color: yellowgreen;
-    display: none;
     
+    display: none;
+    box-sizing: border-box;
+    margin-bottom: 25px;
 }
 input{
     display: none;
 }
+
 @media screen and (max-width: 450px) {
+    a{
+        
+        transform: translateX(100px);   
+    }
     label{
         display: block;
         
     }
     
 }
-@media screen and (max-width: 450px) {
-    a{
-        
-        transform: translateX(100px);
-        opacity: 3;
-        
+@media screen and (max-width: 627px) {
+    #auxiframe{
+        height: 420px;
     }
-    
+    iframe {
+        height: 318px;
+        width: 186px;
+        top: -100px;
+    }
+    #redes-sociais{
+        padding-right: 5px;
+    }
 }
 
