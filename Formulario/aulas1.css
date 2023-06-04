@@ -4,7 +4,7 @@
     padding: 0px;
 }
 .auxform{
-    height: 600px;
+    height: 100%;
     width: 100vw;
     display: flex;
     flex-direction: row;
@@ -12,10 +12,12 @@
     justify-content: center;
     align-items: center;
     align-content: center;
+    margin-top: 5px;
+    margin-bottom: 5px;
 }
 .form{
-    height: 500px;
-    width: 300px;
+    height: max-content;
+    width: 95vw;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -25,8 +27,9 @@
     border-radius: 5px;
     
 }
-.usuario .senha{
-   
+.usuario, .senha, .numeros, .data-aniversario, .email, .cel, .media, .sexo, .esportes, .estado, .prof, .msgu, .numerosu, .soma{
+    margin-top: 1px;
+    margin-bottom: 1px;
     padding: 2px;
 
 }
@@ -34,10 +37,9 @@ form{
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
-    align-items: flex-end;
-    height: 100px;
+    align-items: baseline;
+    height: max-content;
     font-family: Arial, Helvetica, sans-serif;
-
 }
 input{
     border-radius: 50px;
@@ -53,4 +55,26 @@ label{
     display: flex;
     width: 100%;
     justify-content: flex-end;
+}
+fieldset{
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: flex-end;
+    height: max-content;
+    padding: 1px;
+}
+#esportes{
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: flex-start;
+    height: max-content;
+    padding: 1px;
+}
+#msg{
+    align-items: flex-start;
+}
+.cnf{
+    display: flex;
 }
