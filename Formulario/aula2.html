@@ -128,10 +128,23 @@
                         <label for="isoma"> Soma: </label>
                         <output name="soma" id="isoma">0</output>
                     </div>
+                    <div class="numerosu1">
+                        <label for="inu1">Numero:</label>
+                        <input type="range" name="nu1" min="0" max="10" value="5" id="inu1"oninput="inu1otp.innerHTML = Number(inu1.value)">
+                        <output  id="inu1otp" >5</output>
 
-
-
-
+                    </div>
+                </fieldset>
+                <fieldset>
+                    <legend>Idade</legend>
+                    <div class="idade">
+                        <label for="inasci">Ano de nascimento :</label>
+                        <input type="number" name="nasci" id="inasci" min="1900" max="2022" oninput="calcidade()">
+                    </div>
+                    <div class="idade">
+                        <label for="iidade">sua idade é :</label>
+                        <output name="idade" id="iidade">0</output>
+                    </div>
                 </fieldset>
                 <div class="botao-enviar">
                 <input type="submit" value="Entrar">
@@ -139,6 +152,18 @@
 
                 </div>
             </form>
+            <script>
+                function calcidade(){
+                    let atual = new Date().getFullYear()
+                    iidade.innerHTML = Number(atual) - Number(inasci.value)
+                }
+            </script>
+
+
+
+
+
+
         </div>
     </div>
 </body>

@@ -27,12 +27,13 @@
     border-radius: 5px;
     
 }
-.usuario, .senha, .numeros, .data-aniversario, .email, .cel, .media, .sexo, .esportes, .estado, .prof, .msgu, .numerosu, .soma{
+.usuario, .senha, .numeros, .data-aniversario, .email, .cel, .media, .sexo, .esportes, .estado, .prof, .msgu, .numerosu, .soma, .numerosu1{
     margin-top: 1px;
     margin-bottom: 1px;
     padding: 2px;
-
+    display: flex;
 }
+
 form{
     display: flex;
     flex-direction: column;
