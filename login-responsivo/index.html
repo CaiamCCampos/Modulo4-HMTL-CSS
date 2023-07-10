@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tela De login</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="estilos/style.css">
+    <link rel="stylesheet" href="estilos/media-querys.css">
+</head>
+<body>
+    <main>
+        <section>
+            <article id="img">
+
+            </article>
+            <article id="loginF">
+                <h1>Login</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur, delectus nobis! Tempore, odio neque. </p>
+                <form action="cadastro.php" method="post" autocomplete="on">
+                    
+                        <div class="cadastro">
+                            <label for="iusuario">
+                                <span class="material-icons" >login</span>
+                            </label>
+                            <input type="text" name="usuario" id="iusuario" required minlength="5" placeholder=" Seu Email" autocomplete="username">
+                        </div>
+                        <div class="cadastro">
+                            <label for="isenha">
+                                <span  class="material-icons" >lock</span>
+                            </label>
+                            <input type="password" name="senha" id="isenha" required minlength="8" placeholder=" Sua Senha" autocomplete="current-password">
+                        </div>
+                    
+                        <div class="cadastro">
+                            <input class="botao" type="submit" value="Entrar">
+                        </div>
+                        <div class="cadastro">
+                            <a href="">Esqueci a senha  <span class="material-icons" >email</span></a>
+                           
+                        </div>
+                </form>
+            </article>
+        </section>
+    </main>
+</body>
+</html>

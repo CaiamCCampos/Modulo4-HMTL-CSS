@@ -1,0 +1,105 @@
+@charset "UTF-8";
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+html, body{
+    width: 100vw;
+    height: 100vh;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background-color: #5f2c82;;
+}
+
+main{
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    
+}
+section{
+    position: absolute;
+    background-color: white;
+    width: 250px;
+    height: 520px;
+    top: 50%;
+    left: 50%;
+    border-radius: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.062);
+    transform: translate(-50%, -50%);
+}
+article#img{
+    background: url(../imagens/pexels-pixabay-273209.jpg) no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 200px;
+    width: 100%;
+    border-radius: 20px 20px 0px 0px ;
+}
+article#loginF{
+    display: block;
+    padding: 10px;
+}
+article#loginF > h1{
+    width: 100%;
+    text-align: center;
+    margin-bottom: 4px;
+    font-size: x-large;
+    
+}article#loginF > p {
+    margin-bottom: 4px;
+}
+.cadastro{
+    background-color: #5f2c82;
+    
+    display: inline-flex;
+    width: 100%;
+    height: 40px;
+    border-radius: 8px;
+    margin: 2px 0px; 
+    align-items: center;
+    
+}
+input{
+    width: 100%;
+    border-radius: 8px;
+    height: 100%;
+    background-color:#94cfcd;
+   
+    border: none;
+
+}
+.cadastro > label > span{
+    color: white;
+    font-size: 1.9em;
+    width: 40px;
+    text-align: center;
+    height: max-content;
+}
+.botao{
+    width: 100%;
+    height: 100%;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 1em;
+    
+}
+.cadastro > a {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    color: rgb(80, 153, 153);
+    background-color: white;
+    padding-top: 2px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-size: 1em;
+}
+.botao:hover{
+    background-color:#446160;
+}
+.cadastro > a:hover{
+    background-color:#94cfcd;
+    color: white;
+}
