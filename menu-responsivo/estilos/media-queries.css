@@ -1,0 +1,43 @@
+@charset "UTF-8";
+/*
+    typical device breackpoints
+----------------------------------
+Pequenas telas: até 600px
+Celular: 600px a 768px
+Tablet: 768px a 992px
+Desktop: 992px a 1200px
+Grandes telas: acima de 1200px
+----------------------------------
+*/
+@media print{ /*impressão*/
+   
+}
+
+@media screen and (min-width: 768px) and (max-width: 992px) { /*tablet*/ 
+   
+}
+@media screen and (min-width: 992px) and (max-width: 1200px) { /*desktop*/
+    span#burguer{
+        display: none;
+    }
+    menu{
+        display: block;
+    }
+    menu > ul > li {
+        display: inline-block;
+        
+    }
+    ::-webkit-scrollbar{
+        display: block;
+    }
+}
+@media screen and (min-width: 1200px)  { /*grandes telas*/
+    main{
+        width: 768px;
+    }
+    ::-webkit-scrollbar{
+        display: block;
+    }
+
+
+}
