@@ -20,23 +20,23 @@
                 <form action="cadastro.php" method="post" autocomplete="on">
                     
                         <div class="cadastro">
-                            <label for="iusuario">
+                            <label for="ilogin">
                                 <span class="material-icons" >login</span>
                             </label>
-                            <input type="text" name="usuario" id="iusuario" required minlength="5" placeholder=" Seu Email" autocomplete="username">
+                            <input type="email" name="login" id="ilogin" placeholder=" Seu Email" autocomplete="email" required maxlength="30">
                         </div>
                         <div class="cadastro">
                             <label for="isenha">
                                 <span  class="material-icons" >lock</span>
                             </label>
-                            <input type="password" name="senha" id="isenha" required minlength="8" placeholder=" Sua Senha" autocomplete="current-password">
+                            <input type="password" name="senha" id="isenha" required minlength="8" maxlength="20" placeholder=" Sua Senha" autocomplete="current-password">
                         </div>
                     
                         <div class="cadastro">
                             <input class="botao" type="submit" value="Entrar">
                         </div>
                         <div class="cadastro">
-                            <a href="">Esqueci a senha  <span class="material-icons" >email</span></a>
+                            <a href="">Esqueci a senha  <span class="material-icons">email</span></a>
                            
                         </div>
                 </form>

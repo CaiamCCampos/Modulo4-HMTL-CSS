@@ -48,10 +48,14 @@ article#loginF > h1{
     width: 100%;
     text-align: center;
     margin-bottom: 4px;
-    font-size: x-large;
-    
-}article#loginF > p {
+    font-size: x-large;  
+}
+article#loginF > p {
     margin-bottom: 4px;
+    font-size: small;
+}
+#ilogin, #isenha{
+    border: 2px solid #5f2c82;
 }
 .cadastro{
     background-color: #5f2c82;
