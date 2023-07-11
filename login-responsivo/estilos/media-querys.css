@@ -30,7 +30,7 @@ Grandes telas: acima de 1200px
     }
 
 }
-@media screen and (min-width: 992px) and (max-width: 1200px) { /*desktop*/
+@media screen and (min-width: 992px) { /*desktop*/
     section{
         width: 950px;
         height: 350px;
@@ -47,12 +47,8 @@ Grandes telas: acima de 1200px
         height: 100%;
     }
     .cadastro{
-        margin: 5px;
-        width: 98%;
+        margin: 5px 0px 5px 0px;
+       
     }
-
-}
-@media screen and (min-width: 1200px)  { /*grandes telas*/
-     
 
 }
