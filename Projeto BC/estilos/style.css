@@ -310,12 +310,13 @@ main > #prodsprincipal > .prodsprincihome > span > a{
 }
 #princimarcas > .control{
     width: 40px;
-    height: 50vh;
+    height: max-content;
     border-radius: 50px;
     display: inline-flex;
     justify-content: center;
     align-items: center;
     cursor: pointer;
+    transform: translate(-50%, 0%);
     color: rgba(0, 0, 0, 0.342);
 }
 #princimarcas > .control > span{
