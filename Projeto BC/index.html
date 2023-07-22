@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,25 +12,35 @@
 <body onresize="mudouTamanho()">
     <nav>
         <span id="burguer" class="material-icons" onclick="clickMenu()">menu</span>
-        <a href=""><span id="mail" class="material-icons">mail</span></a>
+        <a href="#"><span id="mail" class="material-icons" onclick="clickMail()">mail</span></a>
         <span class="material-icons">west</span>
         <span>Orçamento detalhado</span>
         <a href="" class="logo"></a>
         
     </nav>
-    <header id="header">
-        
-        <menu id="menu">
-            <ul>
-                <li><a href="">Opcão 1</a></li>
-                <li><a href="">Opcão 2</a></li>
-                <li><a href="">Opcão 3</a></li>
-                <li><a href="">Opcão 4</a></li>
-                <li><a href="">Opcão 5</a></li>
-            </ul>
-        </menu>
-    </header>
+    
     <main>
+        <header id="header">  
+            <menu id="menu">
+                <ul>
+                    <li><a href="">Opcão 1</a></li>
+                    <li><a href="">Opcão 2</a></li>
+                    <li><a href="">Opcão 3</a></li>
+                    <li><a href="">Opcão 4</a></li>
+                    <li><a href="">Opcão 5</a></li>
+                </ul>
+            </menu>
+        </header>
+        <section id="od">
+            <div class="formulario">
+                <span>
+                    <h1>Orçamento Detalhado <span id="burguer" class="material-icons">close</span></h1> 
+                </span>
+                <form action="">
+
+                </form>
+            </div>
+        </section>
         <section id="capa">
             <img src="imagens/bannerppecas.jpg" alt="">
         </section>
@@ -123,7 +133,7 @@
             <h1>Quem somos?</h1>
         </div>
         <section id="quemsomos">
-
+            <P><b>A BC COMERCIOS DISTRIBUIDORA E IMPORTADORA DE AUTO PECAS LTDA Ltda</b>, traz para seus fornecedores e clientes, com muita satisfação, uma história feita desde 1976 com trabalho e ideais, localizada na Av. Carlos Liviero, 280 – Vila Liviero, São Paulo – SP, 04186-100, operando com qualidade e competência no ramo  e venda de peças originais, de carros arrematados em leilões, atende as principais Oficinas Mecânicas, Concessionárias, Frotista e Proprietários de veículo da Grande São Paulo</P>
         </section>
         <div class="orçamento">
             <a href="https://wa.me/55119" class="whats" target="_blank">
@@ -136,10 +146,42 @@
             <h1>Depoimentos</h1>
         </div>
         <section id="depoimentos">
-            <article class="dep"></article>
-            <article class="dep"></article>
-            <article class="dep"></article>
-            <article class="dep"></article>
+            <article class="dep">
+                <img src="" alt="">
+                <p class="depoimentos nome">nome, idade</p>
+                <p class="depoimentos prodcompra">produto comprado</p>
+                <p class="depoimentos msg">
+                    <q>Mensagem de agradecimento e chegada do produto</q>
+                </p>
+                
+            </article>
+            <article class="dep">
+                <img src="" alt="">
+                <p class="depoimentos nome">nome, idade</p>
+                <p class="depoimentos prodcompra">produto comprado</p>
+                <p class="depoimentos msg">
+                    <q>Mensagem de agradecimento e chegada do produto</q>
+                </p>
+                
+            </article>
+            <article class="dep">
+                <img src="" alt="">
+                <p class="depoimentos nome">nome, idade</p>
+                <p class="depoimentos prodcompra">produto comprado</p>
+                <p class="depoimentos msg">
+                    <q>Mensagem de agradecimento e chegada do produto</q>
+                </p>
+                
+            </article>
+            <article class="dep">
+                <img src="" alt="">
+                <p class="depoimentos nome">nome, idade</p>
+                <p class="depoimentos prodcompra">produto comprado</p>
+                <p class="depoimentos msg">
+                    <q>Mensagem de agradecimento e chegada do produto</q>
+                </p>
+                
+            </article>
         </section>
         <div class="whatsapp1">
 			<a href="https://wa.me/55119" class="whats" target="_blank">
@@ -151,7 +193,7 @@
             <div>
                 <article><a  class="logo"></a></article>
                 <article>
-                    <p>"Muito mais do que expectativas e exigencias atendidas, clientes querem exelencia no atendimento"</p>
+                    <p><q>Muito mais do que expectativas e exigencias atendida, clientes querem exelencia no atendimento</q></p>
                 </article>
                 <article>
                     <a href="" style="background-image: url(imagens/facebook.png);"></a>
@@ -177,7 +219,7 @@
         <section class="footer">
             <article class="letrasp">
                 <p><a href="">Politicas de privacidade</a></p>
-                <p class="Lpequenas">RHINO AUTOPARTS DISTRIBUIDORA E IMPORTADORA DE AUTO PECAS LTDA</p> <p class="Lpequenas"> CNPJ 39.601.246/0001-54</p>
+                <p class="Lpequenas">BC COMERCIOS DISTRIBUIDORA E IMPORTADORA DE AUTO PECAS LTDA</p> <p class="Lpequenas"> CNPJ 39.601.246/0001-54</p>
             </article>
         </section>
     </footer>
@@ -200,9 +242,17 @@
                 header.style.display = 'block'
             }
         }
+        function clickMail(){
+            if (od.style.display == 'flex'){
+                od.style.display = 'none'
+                }
+            else{
+                od.style.display = 'flex'
+            }
+        }
 
         const controls = document.querySelectorAll(".control");
-        let currentMarcas = 0;
+        let currentItem = 0;
         const marcas = document.querySelectorAll(".marca");
         const maxMarcas = marcas.length;
 
@@ -211,18 +261,33 @@
                 const isLeft = control.classList.contains("botaoe");
 
                 if(isLeft){
-                    currentMarcas -= 1;
+                    currentItem -= 1;
                 }
                 else{
-                    currentMarcas += 1;
+                    currentItem += 1;
                 }
-                if(currentMarcas >= maxMarcas){
-                    currentMarcas = 0;
+                if(currentItem >= maxMarcas){
+                    currentItem = 0;
                 }
-                if(currentMarcas < 0 ){
-                    currentMarcas = maxMarcas -1;
+                if(currentItem = 0 ){
+                    currentItem = maxMarcas -1;
                 }
+
+
+
                 marcas.forEach(marcas => marcas.classList.remove("current-marcas"));
+
+                marcas[currentItem].scrollIntoView({
+                    inline: "center",
+                    behavior: "smooth",
+            });
+            marcas[currentItem].classList.add("current-marcas");
+
+
+
+
+                console.log("control", isLeft, currentItem);
+
                 
 
                

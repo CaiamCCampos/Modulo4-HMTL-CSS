@@ -63,7 +63,7 @@ header{
     background-color: black;
     height: 100vh;
     position: fixed;
-    top: calc(100% - 94.7%);
+    left: 0px;
     width: max-content;
     padding: 10px; 
     display: none;
@@ -115,8 +115,45 @@ main{
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    padding-top: 50px;
+    padding-top: 45px;
     padding-bottom: 40px;
+}
+main > section#od{
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(59, 59, 59, 0.5);
+    display: none;
+    align-items: center;
+    justify-content: center;
+    z-index: 10000;
+}
+main > section#od > .formulario{
+    width: 90% ;
+    height: 100%;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+}
+main > section#od > .formulario > span {
+    width: 100%;
+    height: 40px;
+    background-color: aquamarine;
+    margin: 10px 0px;
+}
+main > section#od > .formulario > span > h1 {
+    font-size: medium;
+    text-align: center;
+}
+main > section#od > .formulario > form{
+    width: 90%;
+    height: 70%;
+    border-radius: 8px;
+    box-shadow: 0px 0px 8px;
+    background-color: chocolate;
+    margin: 10px 0px;
 }
 main > section#capa{
     width: 100vw;
@@ -128,7 +165,6 @@ main > section#capa{
 main > section#capa > img{
     width: 100%;
     height: 100%;
-
 }
 #card-fret{
     width: 100vw;
@@ -146,7 +182,6 @@ main > section#capa > img{
 }
 #card-fret > p {
     font-size: large;
-    margin: 8px 0px;
     text-align: center;
     font-weight: bold;
 }
@@ -160,14 +195,10 @@ main > section#capa > img{
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    
-
 }
 .tituloh1 > h1 {
     font-size: large;
-    text-shadow: 0px 0px 1px;
     margin-left: 2px;
-
 }
 .orçamento{
     display: inline-flex;
@@ -177,7 +208,6 @@ main > section#capa > img{
     text-align: center;
     align-items: center;
     justify-content: center;
-   
 }
 .orçamento > a{
     text-decoration: none; 
@@ -195,27 +225,22 @@ main > section#capa > img{
 .orçamento > a:hover{
     box-shadow: 0px 0px 8px white;
     transition: linear 1s;
-
-    
 }
 .orçamento > a > span{
     width: max-content;
     height: max-content;
     color: white;
-    
 }
 .orçamento > a > h1{
     font-size: x-small;
     color: white;
     margin-right: 5px;
     font-weight: bold;
-  
 }
 main > section#prodsprincipal{
     width: 90vw;
     height: max-content;
     padding: 10px 20px;
-    
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -263,6 +288,7 @@ main > #prodsprincipal > .prodsprincihome > span > a{
     justify-content: center;
     text-align: center;
     background-color: rgba(211, 211, 211, 0.336);
+    border-radius: 8px;
 }
 #card-formaspag{
     width: 100vw;
@@ -333,8 +359,8 @@ main > #prodsprincipal > .prodsprincihome > span > a{
     box-sizing: border-box;
 }
 #princimarcas > #auxmarcas > .marcas{
-    height: 460px;
-    width: 270px;
+    height: 400px;
+    width: 200px;
     background-color: rgb(255, 0, 0);
     border-radius: 6px;
     margin: 0px 5px;
@@ -378,9 +404,21 @@ main > #prodsprincipal > .prodsprincihome > span > a{
 #quemsomos {
     width: 90vw;
     height: 60vh;
-    background-color: yellowgreen;
     margin: 10px 0px;
+    display: inline-flex;
+    align-items: flex-start;
+    justify-content: center;
+    
 }
+#quemsomos > p {
+    width: 80%;
+    height: 80%;
+    font-size: medium;
+    text-align: justify;
+    overflow-y: scroll;
+    text-indent: 30px;
+}
+
 #depoimentos{
     overflow-x: scroll;
     display: inline-block;
@@ -394,12 +432,36 @@ main > #prodsprincipal > .prodsprincihome > span > a{
 }
 .dep{
     height: 270px;
-    width: 270px;
-    background-color: rgba(0, 255, 255, 0.267);
+    width: 99%;
     border-radius: 6px;
     margin: 0px 5px;
     cursor: pointer;
     box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+    padding: 10px;
+}
+.dep:hover{
+    box-shadow: 0px 0px 8px;
+}
+.dep > img{
+    width: 60px;
+    height: 60px;
+    border-radius: 50px;
+    background-color: brown;
+    margin-bottom: 20px;
+
+}
+.dep > p{
+    font-size: medium;
+    margin: 10px 0px;
+    width: 100%;
+    text-align: center;
+}
+.dep > p > q{
+    color: rgba(170, 170, 170, 0.863);
 }
 footer{
     display: flex;
@@ -485,7 +547,8 @@ footer > .footer > .letrasp > p{
     font-size: xx-small;
     margin-top: 2px;
     margin-bottom: 2px;
-}   
+}  
+
     
 
  
