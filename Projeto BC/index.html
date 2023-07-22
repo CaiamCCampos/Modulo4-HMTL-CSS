@@ -45,13 +45,46 @@
         <section id="od">
             <div class="formulario">
                 <span>
-                    <h1>Orçamento Detalhado</h1>
+                    <h1>Formulario de contato</h1>
                     <span id="burguer" class="material-icons" onclick="clickMail()">close
 
                     </span>
                 </span>
-                <form action="">
-
+                <form action="" method="">
+                    <fieldset>
+                        <legend>Dados Pessoais</legend>
+                        <div class="nome">
+                            <label for="inome">Nome:</label>
+                            <input type="name" name="nome" id="inome" required placeholder="Seu Nome">
+                        </div>
+                        <div class="email">
+                            <label for="iemail">Email:</label>
+                            <input type="email" name="email" id="iemail" required placeholder="Seu Email" autocomplete="email">
+                        </div>
+                        <div class="cpf">
+                            <label for="icpf">CPF:</label>
+                            <input type="number" name="cpf" id="icpf" placeholder="Seu CPF" required pattern="^[0-9]{3}[0-9]{3}[0-9]{3}[0-9]{2}$">
+                        </div>
+                        <div class="cel">
+                            <label for="icel">Cel:</label>
+                            <input type="tel" name="cel" id="icel" placeholder="Numero do WhatsApp" required autocomplete="tel" pattern="[0-9]{2}[9]{1}[0-9]{8}">
+                        </div>
+                        <div class="data-aniversario">
+                            <label for="idata">Nascimento:</label>
+                            <input type="date" name="data" id="idata" >
+                        </div>
+                        
+                    </fieldset>
+                    <fieldset id="msg">
+                        <legend>Menssagem</legend>
+                            <div class="msgu">
+                                <label for="imsg"></label>
+                                <textarea name="msg" id="imsg" cols="80%" rows="2" placeholder="Ajuda - Suporte / ou Solicitação de peça especifica"></textarea>
+                            </div>
+                    </fieldset>
+                    <div class="botao-enviar">
+                        <input type="submit" value="Enviar">
+                    </div>
                 </form>
             </div>
         </section>
@@ -264,6 +297,7 @@
                 od.style.display = 'flex'
             }
         }
+       
 
         const controls = document.querySelectorAll(".control");
         let currentItem = 0;
