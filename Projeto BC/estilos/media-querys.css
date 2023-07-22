@@ -26,10 +26,6 @@ Grandes telas: acima de 1200px
         display: block;
        
     }
-    ::-webkit-scrollbar{
-        display: block;
-       
-    }
     #depoimentos::-webkit-scrollbar{
         display: block;
     } 

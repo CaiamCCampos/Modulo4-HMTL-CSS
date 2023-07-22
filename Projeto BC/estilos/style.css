@@ -41,7 +41,7 @@ nav > .logo{
     background-repeat: no-repeat;
     background-size: cover;
     position: fixed;
-    left: 88%;
+    right: 10px;
 } 
 nav > a  {
     color: white;
@@ -52,9 +52,9 @@ nav > a  {
 }
 nav > span {
     color: white;
-    font-size: medium;
+    font-size: large;
     font-weight: bold;
-    margin-left: 2px;
+    margin-left: 1px;
 }
 nav > a > span#mail {
     transform: translate(0% , 9%);
@@ -140,12 +140,21 @@ main > section#od > .formulario{
 main > section#od > .formulario > span {
     width: 100%;
     height: 40px;
-    background-color: aquamarine;
     margin: 10px 0px;
+    display: inline-flex;
+    align-items: center; 
+    justify-content: space-between;
+}
+main > section#od > .formulario > span > span {
+   color: white;
+   font-size: x-large;
+   font-weight: bold;
 }
 main > section#od > .formulario > span > h1 {
-    font-size: medium;
+    font-size: large;
     text-align: center;
+    font-weight: bold;
+    color: white;
 }
 main > section#od > .formulario > form{
     width: 90%;
@@ -263,7 +272,6 @@ main > #prodsprincipal > .prodsprincihome > img:hover {
     box-shadow: 0px 0px 8px black;
     transition: linear 0.3s;
 }
-
 main > #prodsprincipal > .prodsprincihome > span{
     width: 90vw;
     height: 70px;
@@ -293,8 +301,7 @@ main > #prodsprincipal > .prodsprincihome > span > a{
 #card-formaspag{
     width: 100vw;
     height: max-content;
-    margin: 10px 0px;
-    
+    margin: 10px 0px; 
 }
 #card-formaspag > article {
     display: inline-flex;
@@ -302,7 +309,7 @@ main > #prodsprincipal > .prodsprincihome > span > a{
     justify-content: space-evenly;
     width: 100%;
     height: 100%;
-    
+    flex-wrap: wrap;
 }
 #card-formaspag > article > article {
     width: 100px;
@@ -343,7 +350,7 @@ main > #prodsprincipal > .prodsprincihome > span > a{
     align-items: center;
     cursor: pointer;
     transform: translate(-50%, 0%);
-    color: rgba(0, 0, 0, 0.342);
+    color: rgba(0, 0, 0, 0);
 }
 #princimarcas > .control > span{
     font-size: xxx-large;
@@ -366,12 +373,12 @@ main > #prodsprincipal > .prodsprincihome > span > a{
     margin: 0px 5px;
     cursor: pointer;
     flex-shrink: 0;
-    opacity: 0.6;
+    opacity: 1;
     transition: all 600ms ease-in-out;
 }
 #princimarcas > #auxmarcas > .marcas:hover{
     box-shadow: 0px 0px 10px black;
-   transition: linear 0.2s;
+    transition: linear 0.2s;
 }
 #princimarcas > #auxmarcas > .current-marcas{
     opacity: 1;
@@ -381,7 +388,7 @@ main > #prodsprincipal > .prodsprincihome > span > a{
 }
 #princimarcas::-webkit-scrollbar-thumb{
     display: block;
-    background-color: darksalmon;
+    background-color: rgba(88, 88, 88, 0.795);
     border-radius: 50px;
 }
 .whatsapp1{
@@ -389,8 +396,8 @@ main > #prodsprincipal > .prodsprincihome > span > a{
     height: 40px;
     position: fixed;
     top: 95%;
-    left: 91.5%;
-    transform: translate(-50%, -50%);
+    right: 10px;
+    transform: translate(0%, -50%);
 }
 .whatsapp1 > a {
     position: absolute;
@@ -403,10 +410,10 @@ main > #prodsprincipal > .prodsprincihome > span > a{
 
 #quemsomos {
     width: 90vw;
-    height: 60vh;
+    height: max-content;
     margin: 10px 0px;
     display: inline-flex;
-    align-items: flex-start;
+    align-items: center;
     justify-content: center;
     
 }
@@ -414,7 +421,7 @@ main > #prodsprincipal > .prodsprincihome > span > a{
     width: 80%;
     height: 80%;
     font-size: medium;
-    text-align: justify;
+    text-align: left;
     overflow-y: scroll;
     text-indent: 30px;
 }
