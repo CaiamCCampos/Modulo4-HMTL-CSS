@@ -19,7 +19,104 @@ Grandes telas: acima de 1200px
     #depoimentos::-webkit-scrollbar{
         display: block;
     }
-
+    main{
+        padding-top: 64px;
+        transition: linear 1s;
+        
+    }
+    nav > span{
+        font-size: xx-large;
+        transition: linear 1s;
+    }
+    span#burguer, span#mail, span#arrow-left, #sifra{
+        font-size: xxx-large;
+        transition: linear 1s;
+    }
+    nav > .logo{
+        width: 50px;
+        height: 50px;
+        transition: linear ease-in-out 1s;
+    }
+    main > section#capa{
+        height: 80vh;
+        transition: linear 1s;
+    }
+   #card-fret > p{
+    font-size: xx-large;
+    transition: linear 1s;
+   }
+   #card-fret > p > span{
+    font-size: xx-large;
+    transition: linear 1s;
+   }
+   .orçamento > a > h1{
+    font-size: x-large;
+    transition: linear 1s;
+   }
+   .orçamento > a:hover{
+    box-shadow: 0px 0px 8px ;
+    width: 70vw;
+    transition: linear 1s;
+   }
+   .orçamento > a{
+    width: 65vw;
+    transition: linear 1s;
+   }
+   .orçamento > a > #phone{
+    font-size: xx-large;
+    transition: linear 1s;
+   }
+   .tituloh1 > h1{
+    font-size: x-large;
+    transition: linear 1s;
+   }
+   .tituloh1 > #topicoh1{
+    font-size: xx-large;
+    transition: linear 1s;
+   }
+   main > #prodsprincipal > .prodsprincihome{
+    height: 500px;
+    transition: linear 1s;
+    
+   }
+   main > #prodsprincipal > .prodsprincihome > img{
+    height: 500px;
+    transition: linear 1s;
+   }
+   main > #prodsprincipal > .prodsprincihome > span > a{
+    font-size: -webkit-xxx-large;
+    transition: linear 1s;
+   }
+   #card-formaspag > article > article > h1{
+    font-size: x-large;
+    transition: linear 1s;
+   }
+   #card-formaspag > article > article > h1 > #cartao, #boleto, #pix{
+    font-size: x-large;
+    transition: linear 1s;
+   }
+   #card-formaspag > article > article > img{
+    width: 200px;
+    height: 200px;
+    transition: linear 1s;
+   }
+   #quemsomos > p{
+    font-size: x-large;
+    transition: linear 1s;
+   }
+   .dep > img{
+    width: 100px;
+    height: 100px;
+    transition: linear 1s;
+   }
+   .dep > p{
+    font-size: x-large;
+    transition: linear 1s;
+   }
+   .dep > p > q{
+    font-size: x-large;
+    transition: linear 1s;
+   }
 }
 @media screen and (min-width: 992px) { /*desktop*/
     #princimarcas::-webkit-scrollbar{
@@ -29,6 +126,104 @@ Grandes telas: acima de 1200px
     #depoimentos::-webkit-scrollbar{
         display: block;
     } 
+    main{
+        padding-top: 64px;
+        transition: linear 1s;
+        
+    }
+    nav > span{
+        font-size: xx-large;
+        transition: linear 1s;
+    }
+    span#burguer, span#mail, span#arrow-left, #sifra{
+        font-size: xxx-large;
+        transition: linear 1s;
+    }
+    nav > .logo{
+        width: 50px;
+        height: 50px;
+        transition: linear ease-in-out 1s;
+    }
+    main > section#capa{
+        height: 80vh;
+        transition: linear 1s;
+    }
+   #card-fret > p{
+    font-size: xx-large;
+    transition: linear 1s;
+   }
+   #card-fret > p > span{
+    font-size: xx-large;
+    transition: linear 1s;
+   }
+   .orçamento > a > h1{
+    font-size: x-large;
+    transition: linear 1s;
+   }
+   .orçamento > a:hover{
+    box-shadow: 0px 0px 8px ;
+    width: 70vw;
+    transition: linear 1s;
+   }
+   .orçamento > a{
+    width: 65vw;
+    transition: linear 1s;
+   }
+   .orçamento > a > #phone{
+    font-size: xx-large;
+    transition: linear 1s;
+   }
+   .tituloh1 > h1{
+    font-size: x-large;
+    transition: linear 1s;
+   }
+   .tituloh1 > #topicoh1{
+    font-size: xx-large;
+    transition: linear 1s;
+   }
+   main > #prodsprincipal > .prodsprincihome{
+    height: 500px;
+    transition: linear 1s;
+    
+   }
+   main > #prodsprincipal > .prodsprincihome > img{
+    height: 500px;
+    transition: linear 1s;
+   }
+   main > #prodsprincipal > .prodsprincihome > span > a{
+    font-size: -webkit-xxx-large;
+    transition: linear 1s;
+   }
+   #card-formaspag > article > article > h1{
+    font-size: x-large;
+    transition: linear 1s;
+   }
+   #card-formaspag > article > article > h1 > #cartao, #boleto, #pix{
+    font-size: x-large;
+    transition: linear 1s;
+   }
+   #card-formaspag > article > article > img{
+    width: 200px;
+    height: 200px;
+    transition: linear 1s;
+   }
+   #quemsomos > p{
+    font-size: x-large;
+    transition: linear 1s;
+   }
+   .dep > img{
+    width: 100px;
+    height: 100px;
+    transition: linear 1s;
+   }
+   .dep > p{
+    font-size: x-large;
+    transition: linear 1s;
+   }
+   .dep > p > q{
+    font-size: x-large;
+    transition: linear 1s;
+   }
     main > #prodsprincipal > .prodsprincihome > span > a{
         text-decoration: none;
         color: rgba(255, 255, 255, 0.062);

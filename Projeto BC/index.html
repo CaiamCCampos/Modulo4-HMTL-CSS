@@ -19,7 +19,7 @@
                 mail
             </span>
         </a>
-        <span class="material-icons">
+        <span id="arrow-left" class="material-icons">
             arrow_left
         </span>
         <span>
@@ -93,16 +93,16 @@
         </section>
         <section id="card-fret">
             <p>Frete gratis a partir de R$ 999,99</p>
-            <span class="material-icons">paid</span>
+            <span id="sifra" class="material-icons">paid</span>
         </section>
         <div class="orçamento">
                 <a href="">
                     <h1>Faça seu orçamento pelo WhatsApp</h1>
-                    <span class="material-icons">phone</span>
+                    <span id="phone" class="material-icons">phone</span>
                 </a>
         </div>
         <div class="tituloh1">
-            <span class="material-icons">label</span>
+            <span id="topicoh1" class="material-icons">label</span>
             <h1>Confira nossos principais produtos!</h1>
         </div>
         <section id="prodsprincipal">
@@ -125,36 +125,35 @@
             </article>
         </section>
         <div class="tituloh1">
-            <span class="material-icons">label</span>
-            <h1>Formas de pagamento</h1>
-            <span class="material-icons">verified</span>
+            <span id="topicoh1" class="material-icons">label</span>
+            <h1>Confira nossos principais produtos!</h1>
         </div>
         <section id="card-formaspag">
             <article>
                 <article>
-                    <h1>Cartão<span class="material-icons">credit_card</span></h1>
+                    <h1>Cartão<span id="cartao" class="material-icons">credit_card</span></h1>
                     <img src="imagens/cartao.jpg" alt="">
                 </article>
                 <article>
-                    <h1>Boleto<span class="material-icons">article</span></h1>
+                    <h1>Boleto<span id="boleto" class="material-icons">article</span></h1>
                     <img src="imagens/boleto.jpg" alt="">
                 </article>
                 <article>
-                    <h1>Pix <span class="material-icons">pix</span></h1>
+                    <h1>Pix <span id="pix" class="material-icons">pix</span></h1>
                     <img src="imagens/pix.jpg" alt="">
                 </article>
                 
             </article>
         </section>
         <div class="orçamento">
-            <a href="https://wa.me/55119" class="whats" target="_blank">
+            <a href="">
                 <h1>Faça seu orçamento pelo WhatsApp</h1>
-                <span class="material-icons">phone</span>
+                <span id="phone" class="material-icons">phone</span>
             </a>
         </div>
         <div class="tituloh1">
-            <span class="material-icons">label</span>
-            <h1>Principais Marcas</h1>
+            <span id="topicoh1" class="material-icons">label</span>
+            <h1>Confira nossos principais produtos!</h1>
         </div>
         <section id="princimarcas">
             <div class="botaoe control" style="transform: translate(50%, 0%);"  aria-label="Previous image" >
@@ -176,21 +175,21 @@
             </div>
         </section>
         <div class="tituloh1">
-            <span class="material-icons">label</span>
-            <h1>Quem somos?</h1>
+            <span id="topicoh1" class="material-icons">label</span>
+            <h1>Confira nossos principais produtos!</h1>
         </div>
         <section id="quemsomos">
             <P><b>BC COMERCIOS DISTRIBUIDORA E IMPORTADORA DE AUTO PECAS LTDA</b>, traz para seus fornecedores e clientes, com muita satisfação, uma história feita desde 1976 com trabalho e ideais, localizada na Av. Carlos Liviero, 280 – Vila Liviero, São Paulo – SP, 04186-100, operando com qualidade e competência no ramo  e venda de peças originais, de carros arrematados em leilões, atende as principais Oficinas Mecânicas, Concessionárias, Frotista e Proprietários de veículo da Grande São Paulo</P>
         </section>
         <div class="orçamento">
-            <a href="https://wa.me/55119" class="whats" target="_blank">
+            <a href="">
                 <h1>Faça seu orçamento pelo WhatsApp</h1>
-                <span class="material-icons">phone</span>
+                <span id="phone" class="material-icons">phone</span>
             </a>
         </div>
         <div class="tituloh1">
-            <span class="material-icons">label</span>
-            <h1>Depoimentos</h1>
+            <span id="topicoh1" class="material-icons">label</span>
+            <h1>Confira nossos principais produtos!</h1>
         </div>
         <section id="depoimentos">
             <article class="dep">
@@ -271,16 +270,7 @@
         </section>
     </footer>
     <script>
-        function mudouTamanho(){
-            if(window.innerWidth >= 992){
-                header.style.display = 'block'
-                burguer.style.display = 'none'
-            }
-            else{
-                header.style.display = 'none'
-                burguer.style.display = 'block'
-            }
-        }
+        
         function clickMenu(){
             if (header.style.display == 'block'){
                 header.style.display = 'none'
