@@ -1,10 +1,20 @@
 @charset "UTF-8";
-
+@keyframes gradient {
+    0% {
+        background-position-x: 0%;
+    }
+    100% {
+        background-position-x: 100%;
+    }
+ }
 *{
     margin: 0px;
     padding: 0px;
     font-family: Arial, Helvetica, sans-serif;
     box-sizing: border-box;
+}
+:root{
+    --gradient: linear-gradient( 45deg, #29518C,#47689E, #5877A6, #728BB3 ,#91A5C0 );
 }
 ::-webkit-scrollbar{
     display: none;
@@ -130,13 +140,14 @@ main > section#od{
 }
 main > section#od > .formulario{
     width: 90%;
-    height: max-content;
+    height: 90%;
     position: absolute;
     display: flex;
     align-items: center;
-    justify-content: flex-start;
+    justify-content: space-evenly;
     flex-direction: column;
     overflow-y: scroll;
+    align-items: center;
 }
 main > section#od > .formulario > span {
     width: 100%;
@@ -145,47 +156,56 @@ main > section#od > .formulario > span {
     display: inline-flex;
     align-items: center; 
     justify-content: center;
+    color:  #10284d;
 }
 main > section#od > .formulario > span > span {
-   font-size: x-large;
+   font-size: xx-large;
    font-weight: bold;
    position: fixed;
    right: 5px;
-   color: white;
-   
+   color: #10284d;
 }
 main > section#od > .formulario > span > h1 {
-    font-size: large;
+    font-size: x-large;
     text-align: center;
-    font-weight: bold;
-    color: white;
+    font-weight: bolder;
+    color: #10284d;
 }
 main > section#od > .formulario > form{
     width: 95%;
     height: 90%;
     border-radius: 8px;
     box-shadow: 0px 0px 8px;
-    background-color: rgb(255, 255, 255);
-    margin: 5px 0px;
+    background-image: linear-gradient( 45deg,
+    #29518C ,
+    #47689E , 
+    #5877A6 , 
+    #728BB3 ,
+    #91A5C0  );
+    background-size: 500% 500%;
+    animation: gradient 3s infinite alternate ease-in-out;
+    margin: 1px 0px 0px 0px;
     padding: 10px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    overflow-y: scroll;
 }
 main > section#od > .formulario > form > fieldset{
     border-style: double;
-    padding: 5px;
     display: flex;
     flex-direction: column;
-    margin-bottom: 5px;
+    margin-top: 20px;
     border-radius: 8px;
     width: 90%;
+    color: #10284d;
 }
 main > section#od > .formulario > form > fieldset > div > textarea{
     width: 90%;
     border-radius: 8px;
     padding: 10px;
+   
 }
 main > section#od > .formulario > form > fieldset > legend{
     font-weight: bold;
@@ -206,19 +226,36 @@ main > section#od > .formulario > form > .botao-enviar{
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: 5px;
+    margin-top: 10px;
  } 
  main > section#od > .formulario > form > .botao-enviar > input{
     width: 90%;
     height: max-content;
-    margin: 2px 0px 2px 0px;
     border-radius: 50px;
-    background-color: aquamarine;
-    border: solid 1px;
+    background-color: #728BB3;
+    border: none;
     padding: 5px;
+    font-size: medium;
+    font-weight: bold;
+    color: #10284d;
+    cursor: pointer;
+    box-sizing: border-box;
+    margin: 5px 0px;
  } 
+ main > section#od > .formulario > form > .botao-enviar > input:hover{
+    border: solid white 1px;
+    color: white;
+    background-image: linear-gradient( 45deg,
+    #29518C 10%,
+    #47689E 20%, 
+    #5877A6 30%, 
+    #728BB3 40%,
+    #abb6c5 );
+    transition: linear 1s;
+ }
 main > section#od > .formulario > form > fieldset > div > label{
     font-size: medium;
+    font-weight: bold
  }
  main > section#od > .formulario > form > fieldset > div > input{
     border-radius: 50px;
@@ -493,7 +530,6 @@ main > #prodsprincipal > .prodsprincihome > span > a{
     display: -webkit-inline-box;
     width: 90vw;
     height: max-content;
-    
     padding: 10px 5px;
     box-sizing: border-box;
     margin: 10px 0px;
@@ -507,12 +543,13 @@ main > #prodsprincipal > .prodsprincihome > span > a{
     box-sizing: border-box;
     display: flex;
     align-items: center;
-    justify-content: flex-start;
+    justify-content: center;
     flex-direction: column;
     padding: 10px;
 }
 .dep:hover{
     box-shadow: 0px 0px 8px;
+    transition: linear 1s;
 }
 .dep > img{
     width: 60px;
@@ -520,7 +557,6 @@ main > #prodsprincipal > .prodsprincihome > span > a{
     border-radius: 50px;
     background-color: brown;
     margin-bottom: 20px;
-
 }
 .dep > p{
     font-size: medium;
