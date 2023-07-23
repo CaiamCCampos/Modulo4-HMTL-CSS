@@ -345,19 +345,9 @@ main > section#capa > img{
     margin-right: 5px;
     
 }
-main > section#prodsprincipal{
-    width: 90vw;
-    height: max-content;
-    padding: 10px 20px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
 .prodsprincihome{
     width: 90vw;
     height: 350px;
-    background-color: aqua;
     margin: 5px 0px;
     border-radius: 8px;
     cursor: pointer;
@@ -536,9 +526,9 @@ main > #prodsprincipal > .prodsprincihome > span > a{
 }
 .dep{
     height: 270px;
-    width: 99%;
+    width: max-content;
     border-radius: 6px;
-    margin: 0px 5px;
+    margin: 5px 5px;
     cursor: pointer;
     box-sizing: border-box;
     display: flex;

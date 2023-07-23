@@ -12,7 +12,19 @@ Grandes telas: acima de 1200px
 @media print{ /*impressão*/
    
 }
+@media screen and (max-width: 767px) {
+    main > section#prodsprincipal{
+        width: 90vw;
+        height: max-content;
+        padding: 10px 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
 @media screen and (min-width: 768px) and (max-width: 992px){ /*tablet*/ 
+    
     #princimarcas::-webkit-scrollbar{
         display: block;
     }
@@ -20,16 +32,16 @@ Grandes telas: acima de 1200px
         display: block;
     }
     main{
-        padding-top: 64px;
+        padding-top: 48px;
         transition: linear 1s;
         
     }
     nav > span{
-        font-size: xx-large;
+        font-size: x-large;
         transition: linear 1s;
     }
     span#burguer, span#mail, span#arrow-left, #sifra{
-        font-size: xxx-large;
+        font-size: xx-large;
         transition: linear 1s;
     }
     nav > .logo{
@@ -42,28 +54,28 @@ Grandes telas: acima de 1200px
         transition: linear 1s;
     }
    #card-fret > p{
-    font-size: xx-large;
+    font-size: x-large;
     transition: linear 1s;
    }
    #card-fret > p > span{
-    font-size: xx-large;
+    font-size: x-large;
     transition: linear 1s;
    }
    .orçamento > a > h1{
-    font-size: x-large;
+    font-size: large;
     transition: linear 1s;
    }
    .orçamento > a:hover{
     box-shadow: 0px 0px 8px ;
-    width: 70vw;
+    width: 55vw;
     transition: linear 1s;
    }
    .orçamento > a{
-    width: 65vw;
+    width: 50vw;
     transition: linear 1s;
    }
    .orçamento > a > #phone{
-    font-size: xx-large;
+    font-size: x-large;
     transition: linear 1s;
    }
    .tituloh1 > h1{
@@ -74,17 +86,31 @@ Grandes telas: acima de 1200px
     font-size: xx-large;
     transition: linear 1s;
    }
-   main > #prodsprincipal > .prodsprincihome{
-    height: 500px;
+   main > #prodsprincipal{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
     transition: linear 1s;
-    
+   }
+   main > #prodsprincipal > .prodsprincihome{
+    height: 350px;
+    width: 350px;
+    margin: 20px 0px;
+    transition: linear 1s;
    }
    main > #prodsprincipal > .prodsprincihome > img{
-    height: 500px;
+    height: 350px;
+    width: 350px;
     transition: linear 1s;
    }
    main > #prodsprincipal > .prodsprincihome > span > a{
-    font-size: -webkit-xxx-large;
+    font-size: xx-large;
+    transition: linear 1s;
+   }
+   main > #prodsprincipal > .prodsprincihome > span {
+    
+    width: 350px;
     transition: linear 1s;
    }
    #card-formaspag > article > article > h1{
@@ -101,7 +127,11 @@ Grandes telas: acima de 1200px
     transition: linear 1s;
    }
    #quemsomos > p{
-    font-size: x-large;
+    font-size: large;
+    transition: linear 1s;
+   }
+   #depoimentos{
+    padding: 30px 50px;
     transition: linear 1s;
    }
    .dep > img{
@@ -116,27 +146,30 @@ Grandes telas: acima de 1200px
    .dep > p > q{
     font-size: x-large;
     transition: linear 1s;
+   }
+   .whatsapp1{
+    width: 60px;
+    height: 60px;
    }
 }
 @media screen and (min-width: 992px) { /*desktop*/
     #princimarcas::-webkit-scrollbar{
         display: block;
-       
     }
     #depoimentos::-webkit-scrollbar{
         display: block;
-    } 
+    }
     main{
-        padding-top: 64px;
+        padding-top: 48px;
         transition: linear 1s;
         
     }
     nav > span{
-        font-size: xx-large;
+        font-size: x-large;
         transition: linear 1s;
     }
     span#burguer, span#mail, span#arrow-left, #sifra{
-        font-size: xxx-large;
+        font-size: xx-large;
         transition: linear 1s;
     }
     nav > .logo{
@@ -149,28 +182,28 @@ Grandes telas: acima de 1200px
         transition: linear 1s;
     }
    #card-fret > p{
-    font-size: xx-large;
+    font-size: x-large;
     transition: linear 1s;
    }
    #card-fret > p > span{
-    font-size: xx-large;
+    font-size: x-large;
     transition: linear 1s;
    }
    .orçamento > a > h1{
-    font-size: x-large;
+    font-size: large;
     transition: linear 1s;
    }
    .orçamento > a:hover{
     box-shadow: 0px 0px 8px ;
-    width: 70vw;
+    width: 55vw;
     transition: linear 1s;
    }
    .orçamento > a{
-    width: 65vw;
+    width: 50vw;
     transition: linear 1s;
    }
    .orçamento > a > #phone{
-    font-size: xx-large;
+    font-size: x-large;
     transition: linear 1s;
    }
    .tituloh1 > h1{
@@ -181,17 +214,31 @@ Grandes telas: acima de 1200px
     font-size: xx-large;
     transition: linear 1s;
    }
-   main > #prodsprincipal > .prodsprincihome{
-    height: 500px;
+   main > #prodsprincipal{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
     transition: linear 1s;
-    
+   }
+   main > #prodsprincipal > .prodsprincihome{
+    height: 350px;
+    width: 350px;
+    margin: 20px 0px;
+    transition: linear 1s;
    }
    main > #prodsprincipal > .prodsprincihome > img{
-    height: 500px;
+    height: 350px;
+    width: 350px;
     transition: linear 1s;
    }
    main > #prodsprincipal > .prodsprincihome > span > a{
-    font-size: -webkit-xxx-large;
+    font-size: xx-large;
+    transition: linear 1s;
+   }
+   main > #prodsprincipal > .prodsprincihome > span {
+    
+    width: 350px;
     transition: linear 1s;
    }
    #card-formaspag > article > article > h1{
@@ -208,7 +255,11 @@ Grandes telas: acima de 1200px
     transition: linear 1s;
    }
    #quemsomos > p{
-    font-size: x-large;
+    font-size: large;
+    transition: linear 1s;
+   }
+   #depoimentos{
+    padding: 30px 50px;
     transition: linear 1s;
    }
    .dep > img{
@@ -223,6 +274,10 @@ Grandes telas: acima de 1200px
    .dep > p > q{
     font-size: x-large;
     transition: linear 1s;
+   }
+   .whatsapp1{
+    width: 60px;
+    height: 60px;
    }
     main > #prodsprincipal > .prodsprincihome > span > a{
         text-decoration: none;
