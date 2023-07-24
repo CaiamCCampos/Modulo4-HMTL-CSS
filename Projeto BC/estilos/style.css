@@ -457,10 +457,14 @@ main > #prodsprincipal > .prodsprincihome > span > a{
     padding: 10px 5px;
     box-sizing: border-box;
 }
+#princimarcas > #auxmarcas > .marcas > img{
+    width: 100%;
+    height: 100%;
+    border-radius: 8px;
+}
 #princimarcas > #auxmarcas > .marcas{
     height: 400px;
-    width: 98%;
-    background-color: rgb(255, 0, 0);
+    width: 300px;
     border-radius: 6px;
     margin: 0px 5px;
     cursor: pointer;
@@ -530,20 +534,24 @@ main > #prodsprincipal > .prodsprincihome > span > a{
 }
 .dep{
     height: max-content;
-    width: 230px;
+    width: 300px;
     border-radius: 6px;
-    margin: 5px 5px;
+    margin: 20px 30px;
     cursor: pointer;
     box-sizing: border-box;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    padding: 10px;
+    padding: 35px;
+    
 }
 .dep:hover{
     box-shadow: 0px 0px 8px;
-    transition: linear 1s;
+    transition: linear 0.3s;
+}
+.dep > .prodcompra{
+    margin-bottom: 30px;
 }
 .dep > img{
     width: 100px;
@@ -554,7 +562,7 @@ main > #prodsprincipal > .prodsprincihome > span > a{
 }
 .dep > p{
     font-size: medium;
-    margin: 10px 0px;
+    margin: 2px 0px;
     width: 100%;
     text-align: center;
 }
@@ -599,7 +607,7 @@ footer > .footer > div > article > a {
 }
 footer > .footer > div > article > a:hover {
     box-shadow: 0px 0px 8px;
-    transition: linear 0.2s;
+    transition: linear 0.3s;
 }
 footer > .footer > div > article{
     margin: 20px 0px;
