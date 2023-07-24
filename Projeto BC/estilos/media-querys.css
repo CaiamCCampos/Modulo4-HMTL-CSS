@@ -153,11 +153,27 @@ Grandes telas: acima de 1200px
    }
 }
 @media screen and (min-width: 992px) { /*desktop*/
-    #princimarcas::-webkit-scrollbar{
+    #princimarcas > #auxmarcas::-webkit-scrollbar{
         display: block;
+        
+    }
+    #princimarcas > #auxmarcas::-webkit-scrollbar-thumb{
+        background-color:  black;
+        width: 100px;
+        height: 20px;
+        border-radius: 50px;
+        cursor: pointer;
     }
     #depoimentos::-webkit-scrollbar{
         display: block;
+        
+    }
+    #depoimentos::-webkit-scrollbar-thumb{
+        background-color:  black;
+        width: 50px;
+        height: 20px;
+        border-radius: 50px;
+        cursor: pointer;
     }
     main{
         padding-top: 48px;
@@ -178,8 +194,18 @@ Grandes telas: acima de 1200px
         transition: linear ease-in-out 1s;
     }
     main > section#capa{
-        height: 80vh;
+        height: 90vh;
         transition: linear 1s;
+    }
+    main > section#capa > #banner2{
+        display: block;
+        width: 100%;
+        height: 100%;
+        transform: translate(0%, -1.2%);
+        transition: linear 0.3s;
+    }
+    main > section#capa > #banner1{
+        display: none;
     }
    #card-fret > p{
     font-size: x-large;
@@ -195,11 +221,11 @@ Grandes telas: acima de 1200px
    }
    .orçamento > a:hover{
     box-shadow: 0px 0px 8px ;
-    width: 55vw;
+    width: 35vw;
     transition: linear 1s;
    }
    .orçamento > a{
-    width: 50vw;
+    width: 30vw;
     transition: linear 1s;
    }
    .orçamento > a > #phone{
@@ -260,6 +286,10 @@ Grandes telas: acima de 1200px
    }
    #depoimentos{
     padding: 30px 50px;
+    transition: linear 1s;
+   }
+   .dep{
+    width: 400px;
     transition: linear 1s;
    }
    .dep > img{
