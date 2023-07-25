@@ -34,10 +34,22 @@
         <header id="header">  
             <menu id="menu">
                 <ul>
-                    <li><a href="#prodsprincipal">Cabeçotes</a></li>
-                    <li><a href="#prodsprincipal">Caixas De Cambio</a></li>
-                    <li><a href="#prodsprincipal">Sucatas</a></li>
-                    <li><a href="#prodsprincipal">Cabines</a></li>
+                    <li>
+                        <a onclick="clickInd()"  href="#prodsprincipal" id="inds" style="display: none;">Em breve ... </a>
+                    <a onclick="clickInd()"   href="#prodsprincipal" id="ind" >Cabeçotes </a>
+                </li>
+                    <li>
+                        <a href="#prodsprincipal">Caixas De Cambio</a>
+                    <a onclick="clickInd()"  href="#prodsprincipal" id="inds" style="display: none;">
+                    </li>
+                    <li>
+                        <a href="#prodsprincipal">Sucatas</a>
+                    <a onclick="clickInd()"  href="#prodsprincipal" id="inds" style="display: none;">
+                    </li>
+                    <li>
+                        <a href="#prodsprincipal">Cabines</a>
+                    <a onclick="clickInd()"  href="#prodsprincipal" id="inds" style="display: none;">
+                    </li>
                 </ul>
             </menu>
         </header>
@@ -327,6 +339,17 @@
                 od.style.display = 'flex'
             }
         }
+        function clickInd(){
+            if (ind.style.display == 'inline-flex'){
+                ind.style.display = 'none'
+                inds.style.display = 'inline-flex'
+                }
+            else{
+                ind.style.display = 'inline-flex'
+                inds.style.display = 'none'
+            }
+        }
+
        
 
         const controls = document.querySelectorAll(".control");
