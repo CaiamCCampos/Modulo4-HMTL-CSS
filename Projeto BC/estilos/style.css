@@ -594,7 +594,9 @@ main > #prodsprincipal > .prodsprincihome > span > a{
     background-image: url(../imagens/banner_VD_fiat.jpg);
     background-position: center;
     background-size: cover;
+    background-attachment: scroll;
     background-attachment: fixed;
+    
 }
 
 #depoimentos{
