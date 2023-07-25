@@ -502,24 +502,47 @@ main > #prodsprincipal > .prodsprincihome > span > a{
     background-image: url(../imagens/whatsapp1.png);
     background-position: center center;
     background-size: cover;
+    
 }
 
 #quemsomos {
-    width: 90vw;
+    width: 97vw;
     height: max-content;
     margin: 10px 0px;
     display: inline-flex;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start;
+    flex-direction: column-reverse;
+    flex-wrap: wrap;
     
 }
-#quemsomos > p {
+#auxquemsomos {
+    width: 80vw;
+    height: max-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+#quemsomos > #auxquemsomos > p {
     width: 80%;
     height: 80%;
     font-size: medium;
-    text-align: left;
+    text-align: justify;
     overflow-y: scroll;
     text-indent: 30px;
+}
+#quemsomos > #auxquemsomos > .tituloh1 > h1{
+    font-size: medium;
+}
+#quemsomos > #paralax{
+    width: 80%;
+    height: 500px;
+    border-radius: 8px;
+    background-image: url(../imagens/banner_VD_fiat.jpg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
 }
 
 #depoimentos{
