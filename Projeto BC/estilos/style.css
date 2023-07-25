@@ -301,7 +301,7 @@ main > section#capa > #banner1{
     font-size: xx-large;
 }
 .tituloh1{
-    width: 100vw;
+    width: max-content;
     height: 50px;
     margin: 20px 0px;
     display: flex;
@@ -318,9 +318,15 @@ main > section#capa > #banner1{
 }
 .tituloh1::after{
     content: '';
-    width: 90vw;
+    width: 100%;
     height: 2px;
+    margin-top: 10px;
+    border-radius: 50px;
     background-color: #10284d;
+}
+.quemsomos > .tituloh1::after{
+    content: '';
+    width: 100%;
 }
 .orçamento{
     display: inline-flex;
