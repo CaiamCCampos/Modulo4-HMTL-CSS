@@ -91,11 +91,13 @@ span#burguer{
    
     cursor: pointer;
 }
+nav > #navaux1 > span#arrow-left{
+    transform: translate(0%, 1%);
+}
 nav > #navaux1 > span {
     color: white;
     font-weight: bold;
-    margin-left: 1px;
-    font-size: medium;
+    margin-left: 1px; 
 }
 nav > #navaux1 > a > span#mail {
     font-size: medium;
