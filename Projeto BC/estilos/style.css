@@ -340,28 +340,7 @@ main > section#capa > #banner1{
     width: 100%;
     height: 100%;
 }
-#bemvindo{
-    width: 80vw;
-    height: auto;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
 
-
-}
-
-#bemvindo > P > a{
-    text-decoration: none;
-}
-#bemvindo p > a > span{
-    width: 100%;
-    height: max-content;
-} 
-#bemvindo > p{
-    text-indent: 30px;
-    width: 100%;
-
-}
 #card-fret{
     width: 100vw;
     height: 150px;
@@ -732,7 +711,7 @@ footer{
     flex-wrap: wrap;
 }
 .footer{
-    width: 100%;
+    width: 100vw;
     height: max-content;
     background-color: black ;
     margin-top: 2px;
