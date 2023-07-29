@@ -340,7 +340,25 @@ main > section#capa > #banner1{
     width: 100%;
     height: 100%;
 }
-
+#bemvindo{
+    width: 70vw;
+    margin-bottom: 15px;
+}
+#bemvindo > p > a {
+    text-decoration: none;
+    
+}
+#bemvindo > P{
+    text-indent: 30px;
+    text-align: justify;
+}
+#bemvindo > p > a > span{
+    text-indent: 0px;
+    font-size: medium;
+    color: black;
+    transform: translate(0px, 3px);
+    animation: gradient 3s infinite alternate ease-in-out;
+}
 #card-fret{
     width: 100vw;
     height: 150px;
