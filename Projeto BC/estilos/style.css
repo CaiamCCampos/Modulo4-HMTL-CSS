@@ -191,7 +191,7 @@ main > section#od > .formulario > span > span {
    font-size: large;
    font-weight: bold;
    color: white;
-   width: ;
+   
    display: inline-flex;
    align-items: center;
    justify-content: flex-end;
@@ -343,10 +343,13 @@ main > section#capa > #banner1{
 #bemvindo{
     width: 80vw;
     height: auto;
-    display: inline-flex;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
 
 
 }
+
 #bemvindo > P > a{
     text-decoration: none;
 }
@@ -358,7 +361,6 @@ main > section#capa > #banner1{
     text-indent: 30px;
     width: 100%;
 
-    
 }
 #card-fret{
     width: 100vw;
