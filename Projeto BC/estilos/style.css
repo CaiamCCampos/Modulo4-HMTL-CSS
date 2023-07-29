@@ -18,7 +18,8 @@ font-family: 'Dancing Script',
     margin: 0px;
     padding: 0px;
     font-family: 'Roboto', sans-serif;
-    -webkit-box-sizing: border-box;
+    -webkit-box-sizing: border-box; 
+    
 }
 :root{
     --gradient: linear-gradient( 45deg, #29518C,#47689E, #5877A6, #728BB3 ,#91A5C0 );
@@ -257,7 +258,7 @@ main > section#od > .formulario > form > fieldset{
 main > section#od > .formulario > form > fieldset > div > textarea{
     width: 90%;
     border-radius: 8px;
-    padding: 15px;
+    padding: 5px;
    
 }
 main > section#od > .formulario > form > fieldset > legend{
@@ -338,6 +339,26 @@ main > section#capa > #banner2{
 main > section#capa > #banner1{
     width: 100%;
     height: 100%;
+}
+#bemvindo{
+    width: 80vw;
+    height: auto;
+    display: inline-flex;
+
+
+}
+#bemvindo > P > a{
+    text-decoration: none;
+}
+#bemvindo p > a > span{
+    width: 100%;
+    height: max-content;
+} 
+#bemvindo > p{
+    text-indent: 30px;
+    width: 100%;
+
+    
 }
 #card-fret{
     width: 100vw;
@@ -644,17 +665,12 @@ main > #prodsprincipal > .prodsprincihome > span > a{
 }
 #quemsomos > #paralax{
     width: 80%;
-    height: 500px;
+    height: 250px;
     border-radius: 8px;
     background-image: url(../imagens/banner1.png);
-    background-position: left center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: scroll;
-    background-attachment: fixed;
-    
-   
-    
+    background-position: center;
+    background-size: contain; 
+    background-repeat: no-repeat; 
 }
 #depoimentos{
     overflow-x: scroll;
@@ -776,7 +792,7 @@ footer > .footer > ul{
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
-
+    width: 100%;
 }
 footer > .footer > ul > li{
     margin-top: 10px;
@@ -802,6 +818,7 @@ footer > .footer > .letrasp{
     color: white;
     flex-direction: column;
     text-align: start;
+    width: 100%;
 }
 footer > .footer > .letrasp > p > a{
     text-decoration: none;
