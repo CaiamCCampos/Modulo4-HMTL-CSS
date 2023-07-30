@@ -50,12 +50,19 @@ Grandes telas: acima de 1200px
     #depoimentos::-webkit-scrollbar{
         display: block;
     }
+    #princimarcas::-webkit-scrollbar-thumb{
+        height: 5px;
+    }
+    #depoimentos::-webkit-scrollbar-thumb{
+        height: 5px;
+    }
+    #depoimentos::-webkit-scrollbar{
+        display: block;
+    }
     main{
         padding-top: 48px;
-        transition: linear 0.6s;
-        
+        transition: linear 0.6s;  
     }
-  
     nav > span{
         font-size: x-large;
         transition: linear 0.6s;
@@ -197,7 +204,7 @@ Grandes telas: acima de 1200px
     #princimarcas > #auxmarcas::-webkit-scrollbar-thumb{
         background-color:  black;
         width: 100px;
-        height: 20px;
+        height: 5px;
         border-radius: 50px;
         cursor: pointer;
     }
@@ -208,14 +215,13 @@ Grandes telas: acima de 1200px
     #depoimentos::-webkit-scrollbar-thumb{
         background-color:  black;
         width: 50px;
-        height: 20px;
+        height: 5px;
         border-radius: 50px;
         cursor: pointer;
     }
     main{
         padding-top: 48px;
         transition: linear 0.6s;
-        
     }
     nav > span{
         font-size: x-large;
@@ -346,7 +352,6 @@ Grandes telas: acima de 1200px
     transition: linear 0.6s;
    }
    .dep{
-    width: 400px;
     opacity: 0.7;
     transition: linear 0.6s;
    }

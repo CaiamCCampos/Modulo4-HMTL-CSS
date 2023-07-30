@@ -19,7 +19,6 @@ font-family: 'Dancing Script',
     padding: 0px;
     font-family: 'Roboto', sans-serif;
     -webkit-box-sizing: border-box; 
-    
 }
 :root{
     --gradient: linear-gradient( 45deg, #29518C,#47689E, #5877A6, #728BB3 ,#91A5C0 );
@@ -34,7 +33,6 @@ body{
     display: grid;
     align-items: center;
     justify-content: center;
-  
 }
 nav, header{
     z-index: 1;
@@ -75,8 +73,7 @@ nav > #navaux2 > .logo{
     background-image: url(../imagens/logo1.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    margin-right: 5px;
-    
+    margin-right: 5px; 
 } 
 nav > #navaux1 > a  {
     color: white;
@@ -90,7 +87,6 @@ nav > #navaux1 > a  {
 }
 span#burguer{
     color: white;
-   
     cursor: pointer;
 }
 nav > #navaux1 > span#arrow-left{
@@ -113,21 +109,17 @@ header{
     padding: 10px; 
     display: none;
 }
-
 header > menu > ul > li > a{
     text-decoration: none;
     color: white;
     width: 100%;
     height: 100%;
     display: inline-flex;
-    align-items: center;
-    
+    align-items: center;  
 }
 header > menu > ul  {
     width: 200px;
-    height: max-content;
-   
-    
+    height: max-content;  
 }
 header > menu > ul > li{
     width: 200px;
@@ -135,15 +127,11 @@ header > menu > ul > li{
     background-color: black;
     margin: 5px 0px;
     display: inline-flex;
-    align-items: center;
-    
+    align-items: center;   
 }
 
 header > menu > ul > li:hover{
- 
-
     background-color: rgba(255, 0, 0, 0.493);
-
 }
 main{
     height: max-content;
@@ -175,12 +163,9 @@ main > section#od > .formulario{
     overflow-y: scroll;
     align-items: center;
     height: 95%;
-    
-    
 }
 main > section#od > .formulario > span {
     width: 100%;
-    
     margin: 10px 0px;
     display: inline-flex;
     align-items: center; 
@@ -191,7 +176,6 @@ main > section#od > .formulario > span > span {
    font-size: large;
    font-weight: bold;
    color: white;
-   
    display: inline-flex;
    align-items: center;
    justify-content: flex-end;
@@ -200,7 +184,6 @@ main > section#od > .formulario > span > span {
 }
 main > section#od > .formulario > span > span:hover{
     background-color: rgba(128, 128, 128, 0.767);
-
 }
 
 main > section#od > .formulario > span > h1 {
@@ -259,7 +242,6 @@ main > section#od > .formulario > form > fieldset > div > textarea{
     width: 90%;
     border-radius: 8px;
     padding: 5px;
-   
 }
 main > section#od > .formulario > form > fieldset > legend{
     font-weight: bold;
@@ -295,7 +277,6 @@ main > section#od > .formulario > form > .botao-enviar{
     cursor: pointer;
     box-sizing: border-box;
     margin: 5px 0px; 
-    
  } 
  main > section#od > .formulario > form > .botao-enviar > input:hover{
     border: solid white 1px;
@@ -324,7 +305,6 @@ main > section#od > .formulario > form > fieldset > div > label{
     border: solid 1px black;
     transition: linear 1s;
  }
-
 main > section#capa{
     width: 100vw;
     height: 75vh;
@@ -332,7 +312,6 @@ main > section#capa{
     padding-top: 4px;
     margin-bottom: 10px;  
 }
-
 main > section#capa > #banner2{
     display: none;
 }
@@ -558,14 +537,14 @@ main > #prodsprincipal > .prodsprincihome > span > a{
 }
 #princimarcas > .control{
     width: 40px;
-    height: max-content;
+    height: 100px;
     border-radius: 50px;
     display: inline-flex;
     justify-content: center;
     align-items: center;
     cursor: pointer;
     transform: translate(-50%, 0%);
-    color: rgba(0, 0, 0, 0);
+    color: rgba(0, 0, 0, 0.61);
 }
 #princimarcas > .control > span{
     font-size: xxx-large;
@@ -671,14 +650,24 @@ main > #prodsprincipal > .prodsprincihome > span > a{
     background-size: contain; 
     background-repeat: no-repeat; 
 }
+#auxdep{
+    display: flex;
+    width: 90vw;
+    height: max-content;
+    padding: 10px;
+    align-items: center;
+    justify-content: center;
+    overflow-x: hidden;
+
+}
 #depoimentos{
     overflow-x: scroll;
     display: inline-block;
     display: -webkit-inline-box;
-    width: 90vw;
+    width: 590px;
     height: max-content;
-    padding: 10px 5px;
     margin: 10px 0px;
+    padding: 10px;
 }
 .dep{
     height: max-content;
