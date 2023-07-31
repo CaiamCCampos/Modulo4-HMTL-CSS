@@ -405,11 +405,15 @@ main > section#capa > #banner1{
     cursor: pointer;
     background-color: rgb(158, 158, 158);
     box-shadow: 0px 0px 8px black;
+    transition: linear 1s;
 }
 
 #bemvindo > P{
     text-indent: 30px;
     text-align: justify;
+    width: 70%;
+    margin:10px 0px;
+
 }
 #bemvindo > h1 > a > span{
     text-indent: 0px;
@@ -500,6 +504,7 @@ main > section#capa > #banner1{
     padding: 8px;
     background-color: black;
     color: white; 
+    cursor: pointer;
 
 }
 .orçamento > span:hover{
@@ -690,7 +695,7 @@ main > #prodsprincipal > .prodsprincihome > span > a{
 }
 
 #quemsomos {
-    width: 97vw;
+    width: 90vw;
     height: max-content;
     margin: 10px 0px;
     display: inline-flex;
@@ -977,9 +982,64 @@ footer > .footer > .letrasp > p{
     height: 100px;
     border-radius: 50px;
 }
+/*
+------------------------------------------------
+    politicas de privacidade
+*/ 
 
+.tituloh1priva{
+    width: 70%;
+    height: max-content;
+    margin: 10px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.tituloh1priva > h1 > #topicoh1{
+    transform: translate(0px, 5px);
+}
+.tituloh1priva > h1 {
+    font-size: large;
+    margin-bottom: 15px;
+    text-align: center;
+}
+.tituloh1priva::after{
+    content: '';
+    width: 100%;
+    height: 2px;
+    border-radius: 50px;
+    background-image: linear-gradient( 45deg,
+    #29518C ,
+    #47689E , 
+    #5877A6 , 
+    #728BB3 ,
+    #91A5C0  );
+    background-size: 500% 500%;
+    animation: gradient 1s infinite alternate ease-in-out;
+}
+#auxpriva{
+    height: max-content;
+    width: 90vw;
+    padding: 10px;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.subtpriva{
+    font-size: large;
+    margin : 10px 0px;
+    width: 90vw;
+    text-align: start;
+}
+li {
+    text-align: justify;
+    text-indent: 10px;
+    margin : 5px 0px ;
+    min-width: 280px;
+    max-width: 500px;
 
- 
- 
-
+}
 
